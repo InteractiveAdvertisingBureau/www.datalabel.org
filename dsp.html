@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Super Great DSP</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"; integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/dspux.style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/DataTables/datatables.min.css"/>
+    
+    <script type="text/javascript" src="//fast.fonts.net/jsapi/be2c5049-bd2c-454d-97be-0b863908afc5.js"></script>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>;
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>;
+    <![endif]-->
+  </head>
+  <body class="dsp">
+    
+    <div class="container-fluid">
+      
+      <div class="row">
+        <div id="header">
+          <h1>Super Great DSP</h1>
+          <h5><em>Data Marketplace</em></h5>
+          <div class="comparison-button"><a class="btn btn-default" href="javascript:compare();">Select up to 3 to compare</a></div>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table id="example" class="display table" style="width:100%">
+          <thead>
+              <tr>
+                  <th>Compare</th>
+                  <th>Segment Name</th>
+                  <th>Provider</th>
+                  <th>Size</th>
+                  <th>CPM</th>
+                  <th>Data Label</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td><input type="checkbox" value="Auto-intenders"></td>
+                <td><a href="dsp-detail.html?a=Auto-intenders">Auto-intenders</a></td>
+                <td>Data Provider A</td>
+                <td>164 MM</td>
+                <td>$3.50</td>
+                <td><a href="dsp-detail.html?a=Auto-intenders"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Males 18-24"></td>
+                <td><a href="dsp-detail.html?a=Males%2018-24">Males 18-24</a></td>
+                <td>Data Provider A</td>
+                <td>157 MM</td>
+                <td>$4.75</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Sample Segment A"></td>
+                <td><a href="dsp-detail.html?a=Sample%20Segment%20A">Sample Segment A</a></td>
+                <td>Data Provider A</td>
+                <td>188 MM</td>
+                <td>$9.00</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Sample Segment B"></td>
+                <td><a href="dsp-detail.html?a=Sample%20Segment%20B">Sample Segment B</a></td>
+                <td>Data Provider A</td>
+                <td>153 MM</td>
+                <td>$9.25</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Sample Segment C"></td>
+                <td><a href="dsp-detail.html?a=Sample%20Segment%20C">Sample Segment C</a></td>
+                <td>Data Provider A</td>
+                <td>297 MM</td>
+                <td>$4.00</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Sample Segment D"></td>
+                <td><a href="dsp-detail.html?a=Sample%20Segment%20D">Sample Segment D</a></td>
+                <td>Data Provider A</td>
+                <td>219 MM</td>
+                <td>$1.00</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                                                    <tr>
+                <td><input type="checkbox" value="Auto-intenders"></td>
+                <td><a href="dsp-detail.html?a=Auto-intenders">Auto-intenders</a></td>
+                <td>Data Provider B</td>
+                <td>30 MM</td>
+                <td>$6.75</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Males 18-24"></td>
+                <td><a href="dsp-detail.html?a=Males%2018-24">Males 18-24</a></td>
+                <td>Data Provider B</td>
+                <td>298 MM</td>
+                <td>$6.50</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Sample Segment A"></td>
+                <td><a href="dsp-detail.html?a=Sample%20Segment%20A">Sample Segment A</a></td>
+                <td>Data Provider B</td>
+                <td>121 MM</td>
+                <td>$8.75</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Sample Segment B"></td>
+                <td><a href="dsp-detail.html?a=Sample%20Segment%20B">Sample Segment B</a></td>
+                <td>Data Provider B</td>
+                <td>31 MM</td>
+                <td>$10.00</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Sample Segment C"></td>
+                <td><a href="dsp-detail.html?a=Sample%20Segment%20C">Sample Segment C</a></td>
+                <td>Data Provider B</td>
+                <td>204 MM</td>
+                <td>$2.25</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Sample Segment D"></td>
+                <td><a href="dsp-detail.html?a=Sample%20Segment%20D">Sample Segment D</a></td>
+                <td>Data Provider B</td>
+                <td>283 MM</td>
+                <td>$10.00</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                                                    <tr>
+                <td><input type="checkbox" value="Auto-intenders"></td>
+                <td><a href="dsp-detail.html?a=Auto-intenders">Auto-intenders</a></td>
+                <td>Data Provider C</td>
+                <td>296 MM</td>
+                <td>$6.75</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Males 18-24"></td>
+                <td><a href="dsp-detail.html?a=Males%2018-24">Males 18-24</a></td>
+                <td>Data Provider C</td>
+                <td>91 MM</td>
+                <td>$6.00</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Sample Segment A"></td>
+                <td><a href="dsp-detail.html?a=Sample%20Segment%20A">Sample Segment A</a></td>
+                <td>Data Provider C</td>
+                <td>283 MM</td>
+                <td>$2.75</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Sample Segment B"></td>
+                <td><a href="dsp-detail.html?a=Sample%20Segment%20B">Sample Segment B</a></td>
+                <td>Data Provider C</td>
+                <td>207 MM</td>
+                <td>$3.75</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Sample Segment C"></td>
+                <td><a href="dsp-detail.html?a=Sample%20Segment%20C">Sample Segment C</a></td>
+                <td>Data Provider C</td>
+                <td>297 MM</td>
+                <td>$6.75</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+                          <tr>
+                <td><input type="checkbox" value="Sample Segment D"></td>
+                <td><a href="dsp-detail.html?a=Sample%20Segment%20D">Sample Segment D</a></td>
+                <td>Data Provider C</td>
+                <td>269 MM</td>
+                <td>$5.00</td>
+                <td><a href="dsp-detail.html"><img src="assets/images/datalabel-org-logo.png" class="img-responsive" width="120" /></a></td>
+            </tr>
+          </tbody>
+          
+        </table>
+      </div>
+  
+    </div>
+    
+    <div class="bg-black">
+      <div class="container">
+        <p class="text-center p-y">Copyright &copy 2018 DataLabel.org. All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"; integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/DataTables/datatables.min.js"></script>
+    <script type="text/javascript" src="assets/js/stickybits/jquery.stickybits.min.js"></script>
+    <script src="assets/js/scrollreveal/scrollreveal.min.js"></script>
+    
+    <script src="assets/js/dspux.script.js"></script>
+    <script>
+      $(document).ready(function() {
+      
+        $('#example').DataTable({
+          language: {
+            search: "_INPUT_",
+            searchPlaceholder: "Search..."
+          },
+          order: [[2, 'asc']],
+          rowGroup: {
+              dataSrc: 2
+          },
+          paging: false,
+          scrollY: 600,
+          fixedHeader: {
+            header: true,
+            footer: false
+          }
+        });
+        
+        $('.group').stickybits();
+          
+        $('input[type=checkbox]').change(function() {
+          if ($(this).prop('checked')) {
+            $(this).closest('tr').addClass('marked');
+          } else {
+            $(this).closest('tr').removeClass('marked');
+          }
+
+          if ($('input[type=checkbox]:checked').length > 0) {
+            $('.comparison-button').addClass('active');
+            $('.comparison-button a').text('Compare Selected');
+          } else {
+            $('.comparison-button').removeClass('active');
+            $('.comparison-button a').text('Select up to 3 to compare');
+          }
+          if ($('input[type=checkbox]:checked').length > 2) {
+            $('input[type=checkbox]').not('input[type=checkbox]:checked').attr('disabled', true);
+          } else {
+            $('input[type=checkbox]').attr('disabled', false);
+          }
+        });
+          
+      });
+      
+      var compare = function() {
+        
+        var numChecked = $('input[type=checkbox]:checked').length;
+        
+        a = '';
+        b = '';
+        c = '';
+        
+        if ($('input[type=checkbox]:checked')[0]) {
+          a = $($('input[type=checkbox]:checked')[0]).val();
+        }
+        if ($('input[type=checkbox]:checked')[1]) {
+          b = $($('input[type=checkbox]:checked')[1]).val();
+        }
+        if ($('input[type=checkbox]:checked')[2]) {
+          c = $($('input[type=checkbox]:checked')[2]).val();
+        }
+        
+        window.location.href = 'dsp-detail.html?cl=' + numChecked + '&a=' + a + '&b=' + b + '&c=' + c;
+      }
+    </script>
+  </body>
+</html>
